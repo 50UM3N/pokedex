@@ -8,9 +8,9 @@ function App() {
     );
     console.log(data);
     return (
-        <div className="w-full max-w-7xl mx-auto">
+        <div className="container mx-auto lg:px-4 px-3 py-4">
             {data && (
-                <div className="flex flex-wrap">
+                <div className="grid grid-cols-4 gap-4">
                     {data.results.map((item: any, index: number) => (
                         <PokeCard
                             data={{ ...item, id: index + 1 }}

@@ -7,7 +7,7 @@ interface props {
 
 const PokeCard: React.FC<props> = ({ data }) => {
     return (
-        <div className="w-1/4 bg-slate-100 rounded-md border-[1px] border-slate-200 p-4 relative">
+        <div className="col-span-1 bg-slate-100 rounded-md border-[1px] border-slate-200 p-4 relative">
             <div className="flex relative z-10 justify-between">
                 <p className="capitalize text-lg font-bold text-slate-700">
                     {data.name}
